@@ -1,24 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+
 body {
-    background-image: url('fake_ph.jpg');
-}
-/*
-#mainDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
-#canva1 {
-    background: linear-gradient(to right, #FF6347, #FFD700, #7CFC00);
-    width: 200px;
-    height: 10px;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#protip {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1rem;
+}
+
+#menu {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: inherit;
+    height: 10vh;
+    position: relative;
     border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
 }
 
-#div1 {
+#container {
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: fit-content;
+}
+
+#retour {
+    all: unset;
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px aqua;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-}*/
+    width: inherit;
+    height: 33vh;
+}
+
+.imgLeft, .imgRight {
+    height: 33vh;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#first {
+    transform-origin: top right;
+}
+
+#middle {
+    transform-origin: center right;
+}
+
+#last {
+    transform-origin: bottom right;
+}
+
+.imgLeft {
+    transform-origin: center left;
+}
+
+.imgLeft:hover, .imgRight:hover {
+    transform: scale(2);
+    border-radius: 5px;
+}
+
+.p {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1.5rem;
+}
+
+#title {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 3rem;
+}
+
+#retour:hover{
+    transition: transform 0.5s;
+    transform: scale(1.2);
+}
