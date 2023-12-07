@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#mainDiv {
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+#menu {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: inherit;
+    height: 10%;
+    position: relative;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+#container {
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1.5rem;
+}
+
+#title {
+    font-size: 3rem;
+}
+
+#quote {
+    font-style: italic;
+    position: absolute;
+    top: 70%;
+    left: 3%;
+}
+
+a {
+    all: unset;
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px aqua;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a:hover{
+    transform: scale(1.2);
+}
+
+button {
+    background-color: aqua;
+    margin: 2px;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+.row {
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: inherit;
+    flex-direction: row;
+}
+
+#leftDiv {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: start;
+    align-items: start;
+    height: inherit;
+    width: 45%;
+    flex-direction: column;
+    text-overflow: ellipsis;
+}
+
+#hiddenDiv {
+    position: relative;
+    left: 0;
+    width: 45%;
+    transition: top 0.5s ease;
+}
+
+#rightDiv {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: start;
+    align-items: center;
+    height: inherit;
+    width: 45%;
+    flex-direction: column;
+    perspective: 1000px;
+}
+
+#hiddenDiv2 {
+    position: relative;
+    left: 0;
+    width: 45%;
+    transition: top 0.5s ease;
+}
+
+img {
+    aspect-ratio: 1/1;
+    width: inherit;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.card {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin: -150px;
+    float: left;
+    perspective: 500px;
+}
+  
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+  
+.card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+}
+  
+.front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: #03446A;
+    text-align: center;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+#infos {
+    font-size: 1.2rem;
+}
+  
+.back {
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+}
+
+#canva1 {
+    background: linear-gradient(to right, #FF6347, #FFD700, #7CFC00);
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    align-items: center;
+}

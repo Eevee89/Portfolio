@@ -1,0 +1,24 @@
+body {
+    background-image: url('fake_ph.jpg');
+}
+/*
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#canva1 {
+    background: linear-gradient(to right, #FF6347, #FFD700, #7CFC00);
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    align-items: center;
+}*/
