@@ -43,7 +43,7 @@ body {
     flex-direction: row;
 }
 
-#retour {
+#retour, #solitaire {
     all: unset;
     background-color: aqua;
     padding: 5px;

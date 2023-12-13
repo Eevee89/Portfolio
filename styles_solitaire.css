@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+    background-color: #669622;
+    overflow: hidden;
+}
+
+p {
+    font-size: 3vw;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.topred {
+    color: #F00;
+    position: absolute;
+    top: -2.5vw;
+    left: 1vw;
+}
+
+.endred {
+    color: #F00;
+    position: absolute;
+    bottom: -2.5vw;
+    right: 1vw;
+}
+
+.topblack {
+    color: #000;
+    position: absolute;
+    top: -2.5vw;
+    left: 1vw;
+}
+
+.endblack {
+    color: #000;
+    position: absolute;
+    bottom: -2.5vw;
+    right: 1vw;
+}
+
+.draggable {
+    width: 10vw;
+    aspect-ratio: 57/88;
+    border-radius: 10px;
+    background-color: #eee;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+.regular {
+    width: 10vw;
+    aspect-ratio: 57/88;
+    border-radius: 10px;
+    background-color: #eee;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+.backcard {
+    width: 10vw;
+    aspect-ratio: 57/88;
+    border-radius: 10px;
+    background-color: rgb(162, 5, 215);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1vw;
+    left: 0.5vw;
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+.suit {
+    width: 8vw;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 4vw;
+    left: 1.15vw;
+}
+
+#spadestack, #clubstack {
+    rotate: 90deg;
+}
+
+.stack {
+    width: 10vw;
+    aspect-ratio: 57/88;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #eee;
+    border-style: solid;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    rotate: -90deg;
+}
+
+#diamondtop {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid red;
+    position: absolute;
+    top: 0px;
+}
+
+/*
+#diamondbot {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid red;
+    position: relative;
+    rotate: 180deg;
+}*/
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+#spade {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    top: 20px;
+  }
+#spade:before,
+#spade:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: black;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#spade:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+#club {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#club:before,
+#club:after {
+    position: absolute;
+    content: "";
+    left: 60px;
+    top: -50px;
+    width: 60px;
+    height: 80px;
+    background: black;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+}
+#club:after {
+    left: -50px;
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+}
+
+#buttons {
+    position: absolute;
+    bottom: 5vh;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    height: 100px;
+}
+
+.button {
+    background-color: rgb(162, 5, 215);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
